@@ -1,0 +1,23 @@
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.products_container-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .products-container {
+        padding: 10px;
+    }
+    
+    .products_container-title {
+        font-size: 1.8rem;
+    }
+}

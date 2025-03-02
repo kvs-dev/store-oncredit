@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "email": "admin@example.com",
+      "password": "$2y$10$R5kVaK91grej0vn4oGU9ZOdRJeE7rcYzYimWCQDDpqxxM4UsK4vbW",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Food"
+    },
+    {
+      "id": 4,
+      "name": "Books"
+    },
+    {
+      "id": 5,
+      "name": "Others"
+    }
+  ],
+  "products": [
+    {
+      "title": "Macbook Air",
+      "price": 3000,
+      "description": "Powerful laptop for professional use with high performance",
+      "category": {
+        "id": 1,
+        "name": "Electronics"
+      },
+      "image": "https://picsum.photos/200?random=2",
+      "id": 2
+    },
+    {
+      "title": "Designer T-shirt",
+      "price": 49,
+      "description": "Cheap cotton t-shirt with modern design",
+      "category": {
+        "id": 2,
+        "name": "Clothing"
+      },
+      "image": "https://picsum.photos/200?random=3",
+      "id": 3
+    },
+    {
+      "title": "Jeans Classic",
+      "price": 79,
+      "description": "modern jeans with comfortable fit and durable material",
+      "category": {
+        "id": 2,
+        "name": "Clothing"
+      },
+      "image": "https://picsum.photos/200?random=4",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "title": "Organic Chocolate",
+      "price": 12,
+      "description": "Premium organic chocolate made with high-quality ingredients",
+      "category": {
+        "id": 3,
+        "name": "Food"
+      },
+      "image": "https://picsum.photos/200?random=5"
+    },
+    {
+      "id": 6,
+      "title": "Artisan Coffee",
+      "price": 18,
+      "description": "Specialty coffee beans from sustainable farms",
+      "category": {
+        "id": 3,
+        "name": "Food"
+      },
+      "image": "https://picsum.photos/200?random=6"
+    },
+    {
+      "id": 7,
+      "title": "Bestselling Novel",
+      "price": 24,
+      "description": "Award-winning novel that topped the charts for weeks",
+      "category": {
+        "id": 4,
+        "name": "Books"
+      },
+      "image": "https://picsum.photos/200?random=7"
+    },
+    {
+      "title": "Programming Guide",
+      "price": 45,
+      "description": "Comprehensive guide to modern programming techniques",
+      "category": {
+        "id": 3,
+        "name": "Food"
+      },
+      "image": "https://picsum.photos/200?random=8",
+      "id": 8
+    },
+    {
+      "title": "Smart Watch",
+      "price": 101,
+      "description": "Feature-rich smartwatch with health monitoring capabilities",
+      "category": {
+        "id": 1,
+        "name": "Electronics"
+      },
+      "image": "https://picsum.photos/200?random=9",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "title": "Handmade Craft",
+      "price": 35,
+      "description": "Unique handmade craft item perfect for home decoration",
+      "category": {
+        "id": 5,
+        "name": "Others"
+      },
+      "image": "https://picsum.photos/200?random=10"
+    }
+  ]
+}

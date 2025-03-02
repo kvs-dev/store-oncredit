@@ -1,0 +1,18 @@
+<div class="app-container">
+  <header class="app_container-header" *ngIf="isAuthenticated">
+    <nav class="app_container-nav">
+      <div class="app_container-logo">Product Management App</div>
+      <div class="app_container-nav-links">
+        <button (click)="logout()">Logout</button>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="app_container-main" [ngClass]="{'full-height': !isAuthenticated}">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <footer class="app_container-footer" *ngIf="isAuthenticated">
+    <p>&copy; 2025 Product Management App</p>
+  </footer>
+</div>

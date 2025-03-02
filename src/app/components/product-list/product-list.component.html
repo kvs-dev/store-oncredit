@@ -1,0 +1,25 @@
+<div class="product_list-container">
+    <h3 class="product_list_container-title">Products</h3>
+
+    <div *ngIf="products.length === 0" class="product_list_no-products">
+        No products available.
+    </div>
+
+    <div *ngIf="products.length > 0" class="product_list-grid">
+        <div *ngFor="let product of products" class="product_list-card" [appHighPrice]="product.price">
+            <div class="product_list-image">
+                <img [src]="product.image" [alt]="product.title">
+            </div>
+            <div class="product_list-details">
+                <h4>{{ product.title }}</h4>
+                <p class="product_list-price">{{ product.price | currency }}</p>
+                <p class="product_list-category">{{ product.category.name }}</p>
+                <p class="product_list-description">{{ product.description }}</p>
+                <div class="product_list-button-group">
+                    <button class="product_list-edit-btn" (click)="onEdit(product)">Edit</button>
+                    <button class="product_list-delete-btn" (click)="onDelete(product.id!)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

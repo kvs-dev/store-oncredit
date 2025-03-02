@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.login-container {
+    background-image: url('https://wallpaperbat.com/img/128170722-wave-color-blue-pattern-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.login_form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login_form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.login_form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login_form_group-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.login_form_group-submit:disabled {
+    background-color: rgba(76, 175, 80, 0.5);
+    cursor: not-allowed;
+}
+
+.login_form-error-message {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.login_form-error-message {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.login-form {
+    width: 100%;
+}

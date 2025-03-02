@@ -1,0 +1,50 @@
+<div class="product_form-container">
+    <h3 class="product_form-title">{{ editMode ? 'Edit Product' : 'Add New Product' }}</h3>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            <div class="product_form-group">
+            <label for="title" class="product_form_group-label">Product Name</label>
+            <input type="text" class="product_form_group-input" id="title" formControlName="title" placeholder="Product Name">
+            <div *ngIf="productForm.get('title')?.invalid && productForm.get('title')?.touched" class="error">
+                Product name is required
+            </div>
+        </div>
+
+        <div class="product_form-group">
+            <label for="price" class="product_form_group-label">Price</label>
+            <input type="number" class="product_form_group-input" id="price" formControlName="price" placeholder="Price">
+            <div *ngIf="productForm.get('price')?.errors?.['required'] && productForm.get('price')?.touched"
+                class="error">
+                Price is required
+            </div>
+            <div *ngIf="productForm.get('price')?.errors?.['min'] && productForm.get('price')?.touched" class="error">
+                Price must be greater than 0
+            </div>
+        </div>
+
+        <div class="product_form-group">
+            <label for="description" class="product_form_group-label">Description</label>
+            <textarea class="product_form_group-textarea" id="description" formControlName="description" rows="3" placeholder="Description"></textarea>
+        </div>
+
+        <div class="product_form-group">
+            <label for="categoryId" class="product_form_group-label">Category</label>
+            <select class="product_form_group-select" id="categoryId" formControlName="categoryId">
+                <option value="">Select a category</option>
+                <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+            </select>
+            <div *ngIf="productForm.get('categoryId')?.invalid && productForm.get('categoryId')?.touched" class="error">
+                Category is required
+            </div>
+        </div>
+
+        <div class="product_form-group">
+            <label for="image" class="product_form_group-label">Image URL</label>
+            <input type="text" class="product_form_group-input" id="image" formControlName="image" placeholder="Image URL">
+        </div>
+
+        <div class="product_form_button-group">
+            <button type="submit" class="product_form_button_group-submit" [disabled]="productForm.invalid">{{ editMode ? 'UPDATE' : 'Add Product' }}</button>
+            <button *ngIf="editMode" type="button" class="product_form_button_group-cancel" (click)="cancelEdit()">CANCEL</button>
+        </div>
+    </form>
+</div>

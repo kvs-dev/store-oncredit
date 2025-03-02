@@ -1,0 +1,77 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.app_container-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 10;
+    width: 100%;
+}
+
+.app_container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_container-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.app_container-nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.app_container-nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.app_container-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.app_container-nav-links button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app_container-main {
+    flex: 1;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.app_container-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}

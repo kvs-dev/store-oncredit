@@ -1,0 +1,11 @@
+<div class="products-container">
+    <h2 class="products_container-title">Product Management</h2>
+
+    <app-product-form [productToEdit]="selectedProduct" (addProduct)="onAddProduct($event)"
+        (updateProduct)="onUpdateProduct($event)" (cancelEditEvent)="onCancelEdit()">
+    </app-product-form>
+
+    <app-product-list [products]="products" (deleteProduct)="onDeleteProduct($event)"
+        (editProduct)="onEditProduct($event)">
+    </app-product-list>
+</div>
