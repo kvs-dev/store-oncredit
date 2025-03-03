@@ -106,7 +106,7 @@ store_oncredit/
    ```
 4. En otra terminal, inicia el servidor de desarrollo:
    ```
-   npm start
+   ng serve
    ```
 5. Navega a `http://localhost:4200/`
 
